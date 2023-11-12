@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.movil {
+    display: none;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(22, 27, 34);
+}
+
+header {
+    background-color: rgb(1, 4, 9);
+}
+
+nav li {
+    list-style: none;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+    margin-left: 12px;
+}
+
+.card {
+    color: whitesmoke   ;
+    margin: 2rem;
+    border: transparent ;
+    background-color: transparent;
+    width: 400px !important;
+}
+
+.card:hover {
+    transition: 0.5s;
+    color: aqua;
+}
+
+.card .card-body {
+    height: 100px;
+}
+    
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: rgb(1, 4, 9);
+}
+
+
+@media only screen and (max-width: 768px) {
+    .movil {
+        display: block;
+    }
+
+    main {
+        display: none;
+    }
+}
