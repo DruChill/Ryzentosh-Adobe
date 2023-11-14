@@ -35,10 +35,19 @@ nav li a {
     width: 400px !important;
 }
 
-.card:hover {
+
+.card a img {
     transition: 0.5s;
-    color: aqua;
+    box-shadow: 10px -10px 12px #000;
+    border-radius: .8rem;
 }
+
+.card a img:hover {
+    transition: 0.5s;
+    box-shadow: none;
+    border-radius: 0;
+}
+
 
 .card .card-body {
     height: 100px;
@@ -55,6 +64,10 @@ footer {
 @media only screen and (max-width: 768px) {
     .movil {
         display: block;
+    }
+
+    .movil i {
+        font-size: 12rem;
     }
 
     main {
