@@ -1,30 +1,16 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 
     <!--===== ADS LINK ======-->
     <!-- <script type='text/javascript' src='//respectfulpleaabsolve.com/09/53/46/09534638f860ef1264bd245bee1d592d.js'></script> -->
 
     <script>
-        function obtenerIdiomaNavegador() {
-            return navigator.language || navigator.userLanguage;
-        }
-
-        function redirigirSegunIdioma(idioma) {
-            if (idioma.startsWith('en')) {
-                window.location.href = 'index_en.html';
-            }
-            // Puedes agregar más lógica según tus necesidades para otros idiomas
-
-            // Si el idioma no es inglés, se queda en la versión en español
-        }
-
         function cambiarIdioma(idioma) {
-            redirigirSegunIdioma(idioma);
+            if (idioma === 'es') {
+                window.location.href = 'index.html';
+            }
         }
-
-        // Llamar a la función de redirección al cargar la página
-        redirigirSegunIdioma(obtenerIdiomaNavegador());
     </script>
 
     <!--===== Metadatos ======-->
@@ -61,29 +47,24 @@
 
     <header class="d-flex justify-content-around p-1 align-items-center">
         <img src="/assets/img/FaviconLogo.png" width="50px" alt="logo">
-        <nav class="d-flex justify-content-end  align-items-center">
+        <nav class="d-flex align-items-center">
             <li>
                 <a href="https://github.com/">
                     <i class="fs-1 bi bi-github"></i>
                 </a>
             </li>
             <li class="ms-5">
-                <div class="p-1 d-flex align-items-center">
-                    <i class="text-light fs-3 bi bi-translate"></i>
-                    <button class="btn btn-outline-light ms-1" onclick="cambiarIdioma('es')">Es</button>
-                    <button class="btn btn-outline-light ms-1" onclick="cambiarIdioma('en')">Eng</button>
-                </div>
-                <!-- <button class="btn btn-light" onclick="cambiarIdioma('es')">Es</button>
-                <button class="btn btn-light" onclick="cambiarIdioma('en')">Eng</button> -->
-            </li>  
+                <button class="btn btn-light" onclick="cambiarIdioma('es')">Es</button>
+                <button class="btn btn-light" onclick="cambiarIdioma('en')">Eng</button>
+            </li>
         </nav>
     </header>
 
     <!--==== Version movil ===-->
     <div class="movil text-center my-5 p-2">
         <span class="fs-2 text-white">
-            No esta disponible la versión
-            Movil visita la web desde tu PC.
+            Version is not available
+            Mobile visit the website from your PC.
         </span>
         <i class="bi bi-exclamation-triangle text-white"></i>
     </div>
@@ -92,7 +73,7 @@
     <main>
         <section class="text-white text-center p-4 mt-4">
             <h1 class="fs-1 mb-4">AMD FRIEND</h1>
-            <p>Dado que la aplicación de parches en el área de usuario no es posible con Lilu en Big Sur+, es necesario aplicar parches <br> manuales a las bibliotecas de ciertos programas para que funcionen de manera confiable en hackintosh AMD.</p>
+            <p>Since front-end patching is not possible with Lilu on Big Sur+, it is necessary to apply manual <br>patches to the libraries of certain programs in order for them to work reliably on AMD hackintosh.</p>
         </section>
 
         <section class="d-md-flex justify-content-center">
@@ -103,8 +84,8 @@
                 </a>
                 <div class="card-body">
                     <h1 class="fs-4">Fix AMD <a href="https://youtu.be/9KAscvuTLf4" target="_blank" class="text-decoration-none text-danger"><i class="bi bi-youtube"></i></a></h1>
-                    <p class="card-text">Encontrarás los pasos a seguir para poder solucionar los problemas de crasheo y cierre inesperado de tus aplicaciones
-                        en macOS para tu Ryzentosh puede funcinar tambien con tu MAC.
+                    <p class="card-text">You will find the steps to follow to solve the crash and unexpected closing problems of your applications.
+                        in macOS for your Ryzentosh it can also work with your MAC.
                     </p>
                 </div>
             </div>
@@ -115,10 +96,10 @@
                 </a>
                 <div class="card-body">
                     <h1 class="fs-4">Adobe Photoshop 2023</h1>
-                    <p class="card-text d-flex">Para Ryzentosh, Hackintosh y Macs 100% funcional en su última versión 2023.
+                    <p class="card-text d-flex">For Ryzentosh, Hackintosh and Macs 100% functional in its latest version 2023.
                         <ol>
-                            <li>Sin virus</li>
-                            <li>100% Garantizado</li>
+                            <li>No viruses</li>
+                            <li>100% Guaranteed/li>
                         </ol>
                     </p>
                 </div>
@@ -129,8 +110,8 @@
                     <img src="assets/img/EFI_UNIVERSAL_RYZENTOSH.png" class="card-img-top" alt="...">
                 </a>
                 <div class="card-body">
-                    <h1 class="fs-4">EFI GRAFICOS APU <a href="https://youtu.be/ZzHOx_kR7sA" target="_blank" class="text-decoration-none text-danger"><i class="bi bi-youtube"></i></a></h1>
-                    <p class="card-text">Descarga gratis EFI para procesador Ryzen con gráficos integrados una gran probabilidad que funcione en tu PC y Laptop.</p>
+                    <h1 class="fs-4">EFI GRAPHICS APU <a href="https://youtu.be/ZzHOx_kR7sA" target="_blank" class="text-decoration-none text-danger"><i class="bi bi-youtube"></i></a></h1>
+                    <p class="card-text">Free download EFI for Ryzen processor with integrated graphics with a high probability that it will work on your PC and Laptop.</p>
                 </div>
             </div>
 
@@ -139,7 +120,7 @@
     </main>
         
     <footer class="text-white p-3 d-flex justify-content-around align-items-center">
-        <p class="m-0">Desarrollada por &copy;Dru</p>
+        <p class="m-0">Powered by &copy;Dru</p>
         <P class="m-0">AARR - 2023</P>
     </footer>
 

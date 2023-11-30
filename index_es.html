@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+</head>
+<body>
+     
+    <h1 class="saludo">¡Bienvenido!</h1>
+    <p class="contenido">Este es el contenido en español.</p>
+
+    <div>
+        <button onclick="cambiarIdioma('es')">Es</button>
+        <button onclick="cambiarIdioma('en')">Eng</button>
+    </div>
+
+    <!-- <script>
+        function obtenerIdiomaNavegador() {
+            return navigator.language || navigator.userLanguage;
+        }
+
+        function redirigirSegunIdioma(idioma) {
+            if (idioma.startsWith('en')) {
+                window.location.href = 'index_en.html';
+            }
+            // Puedes agregar más lógica según tus necesidades para otros idiomas
+
+            // Si el idioma no es inglés, se queda en la versión en español
+        }
+
+        function cambiarIdioma(idioma) {
+            redirigirSegunIdioma(idioma);
+        }
+
+        // Llamar a la función de redirección al cargar la página
+        redirigirSegunIdioma(obtenerIdiomaNavegador());
+    </script> -->
+</body>
+</html>
