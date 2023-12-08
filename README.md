@@ -21,16 +21,6 @@ Use it with:
 amdfriend "/path/to/your/library.dylib"
 ```
 
-## Contributing
-
-If you want to contribute to this project, clone it to your computer!
-
-```sh
-git clone https://github.com/NyaomiDEV/AMDFriend
-cd AMDFriend
-yarn
-yarn test "/path/to/your/library.dylib"
-```
 
 ## Tips and tricks
 
