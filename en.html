@@ -47,16 +47,19 @@
 
     <header class="d-flex justify-content-around p-1 align-items-center">
         <img src="/assets/img/FaviconLogo.png" width="50px" alt="logo">
-        <nav class="d-flex align-items-center">
+        <nav class="d-flex justify-content-end  align-items-center">
             <li>
                 <a href="https://github.com/">
                     <i class="fs-1 bi bi-github"></i>
                 </a>
             </li>
             <li class="ms-5">
-                <button class="btn btn-light" onclick="cambiarIdioma('es')">Es</button>
-                <button class="btn btn-light" onclick="cambiarIdioma('en')">Eng</button>
-            </li>
+                <div class="p-1 d-flex align-items-center">
+                    <i class="text-light fs-3 bi bi-translate"></i>
+                    <button class="btn btn-outline-light ms-1" onclick="cambiarIdioma('es')">Es</button>
+                    <button class="btn btn-light ms-1" onclick="cambiarIdioma('en')">Eng</button>
+                </div>
+            </li>  
         </nav>
     </header>
 
