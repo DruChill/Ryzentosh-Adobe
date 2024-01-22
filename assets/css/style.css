@@ -36,7 +36,9 @@ nav li a {
     margin: 2rem;
     border: transparent ;
     background-color: transparent;
-    width: 400px !important;
+    /* width: 400px !important; */
+    width: auto;
+    max-width: 400px;
 }
 
 
@@ -53,12 +55,9 @@ nav li a {
 }
 
 
-.card .card-body {
-    height: 100px;
-}
+
     
 footer {
-    margin-top: 4rem;
     /* position: absolute;
     width: 100%;
     bottom: 0; */
@@ -67,15 +66,16 @@ footer {
 
 
 @media only screen and (max-width: 768px) {
-    .movil {
-        display: block;
+
+    .cartas {
+        flex-direction: column;
     }
 
-    .movil i {
-        font-size: 12rem;
+    .card {
+        margin: 0;
     }
 
-    main {
+    br {
         display: none;
     }
 }
